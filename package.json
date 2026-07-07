@@ -1,0 +1,14 @@
+{
+  "name": "nasa-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start --workspace mobile",
+    "mobile:web": "npm run web --workspace mobile",
+    "api": "npm run dev --workspace api",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}
